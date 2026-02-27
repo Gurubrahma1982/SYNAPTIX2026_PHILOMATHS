@@ -1,0 +1,280 @@
+
+
+--- Start of Candidate_Profile_Module_Document.pdf ---
+
+Candidate Profile Module Documentation
+1. Module Overview
+The Candidate Profile Module is the foundational component of the Explainable Skill-Based
+Internship and Project Matching Platform.
+It captures, validates, structures, and evaluates candidate competencies in a transparent, skill-first,
+and fairness-aware manner.
+It eliminates dependency on traditional resumes and keyword-based screening mechanisms.
+2. Objectives
+• Replace resume-based filtering with structured competency representation
+• Enable measurable and validated skill profiling
+• Provide explainable ranking and match scores
+• Prevent demographic and institutional bias
+• Offer real-time feedback and skill gap analysis
+• Support continuous candidate skill evolution
+3. Core Architecture
+The module consists of structured layers:
+• Basic Information Layer (Anonymized during ranking)
+• Competency Profile Layer
+• Skill Validation Layer
+• Project & Experience Mapping
+• Assessment Records
+• Certification Records
+• Availability & Preferences
+• Fairness Metadata Layer
+• Explainability Engine
+4. Candidate Dashboard Components
+• Profile Completion Indicator with improvement suggestions
+• Competency Radar Chart for skill visualization
+• Weighted Overall Competency Score
+----------------Page (0) Break----------------
+• Project-wise Match Score with reasoning
+• Skill Gap Analysis and improvement recommendations
+• Historical performance tracking
+5. Candidate Profile Fields
+Basic Information:
+• Full Name (hidden during evaluation)
+• Email and Phone
+• University and Degree
+• Graduation Year
+Skill Matrix:
+• Skill Name
+• Category (Technical, Soft, Domain)
+• Proficiency Level
+• Self Rating (1–5)
+• Validation Status
+• Evidence Link
+Projects:
+• Title, Description, Role
+• Skills Used (tag-based)
+• Duration
+• Outcome Metrics
+• Repository/Portfolio Links
+Assessments:
+• Test Name
+• Score and Percentile
+• Attempt Date
+• Expiry Date
+Certifications:
+• Certificate Name
+• Issuer
+• Verification ID
+• Skill Mapping
+Soft Skills:
+• Communication
+• Teamwork
+• Problem Solving
+• Leadership (if applicable)
+Availability:
+• Internship Type
+• Duration
+• Weekly Commitment
+• Domain Preferences
+----------------Page (1) Break----------------
+6. Scoring System
+Final Weighted Competency Score Formula:
+Final Score =
+(Technical Skills × 40%) +
+(Projects × 25%) +
+(Assessments × 20%) +
+(Certifications × 10%) +
+(Soft Skills × 5%)
+All scores are normalized to a 0–100 scale.
+Confidence score is calculated based on validation strength.
+7. Fairness & Bias Prevention
+• Blind evaluation (no name, gender, photo visibility)
+• No college-tier bias influence
+• Equalized opportunity constraints
+• Disparate impact monitoring
+• Bias audit logs and fairness reports
+8. Explainability Engine
+For every ranking decision, the system provides:
+• Positive contributing factors
+• Missing competencies
+• Weighted contribution breakdown
+• Improvement suggestions
+Example:
++ Strong Python proficiency (+12)
++ High ML assessment score (+8)
+- Missing SQL validation (-6)
+9. Evaluator Dashboard
+• Blind ranked candidate list
+• Skill-wise breakdown
+----------------Page (2) Break----------------
+• Project relevance mapping
+• Confidence indicators
+• Fairness metrics visualization
+10. Data Security & Compliance
+• Encrypted data storage
+• Role-based access control
+• Secure authentication
+• Audit logs for profile edits
+• Consent-based data usage compliance
+11. Advanced Features
+• Dynamic Skill Ontology
+• AI-powered skill extraction
+• Skill similarity graph mapping
+• Real-time ranking updates
+• Career growth prediction
+• Peer benchmarking system
+• Portfolio strength score
+12. Technical Stack (Suggested)
+Frontend: React.js with visualization libraries
+Backend: FastAPI or Django
+Database: PostgreSQL + Graph database (Neo4j optional)
+AI Layer: Scikit-learn / TensorFlow
+Security: JWT Authentication, Role-based access
+----------------Page (3) Break----------------
+
+
+--- End of Candidate_Profile_Module_Document.pdf ---
+
+
+
+--- Start of Fairness_Aware_Ranking_Module_Document.pdf ---
+
+Fairness-Aware Ranking Module
+1. Problem Addressed
+•     Gender-based bias in candidate evaluation
+•     College tier-based discrimination
+•     Location-based inequality
+•     Socioeconomic background influence on ranking decisions
+2. Core Features
+•     Blind Profile Evaluation: Sensitive attributes such as gender, college name, and location are
+hidden during scoring.
+•     Fairness Constraints in Ranking: Incorporates algorithmic constraints to prevent
+disproportionate representation.
+•     Bias Detection Dashboard: Visual analytics to identify potential bias patterns in rankings.
+•     Demographic Parity Monitoring: Ensures equal selection rates across different demographic
+groups.
+•     Equal Opportunity Adjustment: Maintains similar true positive rates across groups.
+•     Score Recalibration: Adjusts weighted scores to correct unintended bias.
+•     Representation Tracking: Continuously monitors diversity across shortlisted candidates.
+•     Fair Ranking Reordering: Reorders final ranking if imbalance is detected while maintaining
+merit-based logic.
+3. Technical Implementation Overview
+•     Weighted competency scoring independent of demographic attributes
+•     Post-processing fairness optimization algorithms
+•     Statistical fairness metrics computation (Demographic Parity, Equal Opportunity)
+•     Automated bias flagging when thresholds exceed defined limits
+•     Transparent audit logs for explainability
+4. Key Benefits
+----------------Page (0) Break----------------
+•     Promotes equitable opportunity allocation
+•     Reduces systemic and implicit bias
+•     Improves trust and transparency in ranking decisions
+•     Ensures compliance with ethical AI standards
+•     Provides explainable and auditable decision-making
+----------------Page (1) Break----------------
+
+
+--- End of Fairness_Aware_Ranking_Module_Document.pdf ---
+
+
+
+--- Start of Project_Requirement_Mapping_Module.pdf ---
+
+Project Requirement Mapping Module
+1. Module Overview
+The Project Requirement Mapping Module is a core component of the Explainable Skill-Based
+Internship and Project Matching Platform. It converts unstructured project descriptions into
+structured, weighted, and machine-readable competency requirements.
+2. Objectives
+- Enable structured skill definition. - Support weighted competency scoring. - Improve transparency
+and explainability. - Reduce bias in requirement design. - Enhance fairness-aware candidate
+matching.
+3. Required Skills Definition
+Allows project creators to define mandatory skills such as programming languages, tools,
+frameworks, domain knowledge, research skills, and soft skills. Skills can be tagged as technical,
+behavioral, or domain-specific.
+4. Skill Weight Assignment
+Each required skill is assigned a percentage weight contributing to the total match score. Total
+required skill weight equals 100%. Example: Python (30%), ML (40%), Communication (15%).
+5. Optional Skills Configuration
+Optional skills enhance ranking but are not mandatory. They provide bonus points with a capped
+contribution (e.g., maximum 15%).
+----------------Page (0) Break----------------
+6. Experience Level Mapping
+Experience levels are defined as Beginner, Intermediate, Advanced, or Expert. These levels are
+mapped to numerical scoring ranges for algorithmic evaluation.
+7. Domain Specification
+Defines the project domain such as AI, Cybersecurity, Data Science, Web Development, etc.,
+ensuring contextual alignment between candidate expertise and project needs.
+8. Timeline & Availability Criteria
+Includes start/end dates, weekly time commitment, and work mode (remote/on-site). Matching logic
+validates candidate availability overlap and required hours.
+9. Team Collaboration Requirements
+Defines if the project is individual or team-based. Can include role-based requirements such as
+Team Lead, Developer, Researcher, and communication skill weighting.
+10. Skill Priority Settings
+Skills can be categorized as Critical, High, Medium, or Low priority. Critical skills may have higher
+multipliers and minimum thresholds.
+11. Fairness & Bias Prevention
+- Prevents over-weighting prestige factors. - Normalizes domain imbalance. - Encourages balanced
+soft and technical skill inclusion. - Supports fairness-aware scoring calibration.
+12. Explainability Features
+----------------Page (1) Break----------------
+Generates detailed score breakdown including skill contribution, optional bonus, experience match,
+availability alignment, and domain compatibility.
+13. System Workflow
+1. Define skills and weights. 2. Set experience levels. 3. Configure domain and timeline. 4. Apply
+priority multipliers. 5. Generate structured requirement blueprint. 6. Pass data to matching engine.
+14. Advantages
+- Eliminates vague job descriptions. - Improves ranking transparency. - Enables explainable
+AI-based selection. - Reduces manual screening bias. - Promotes competency-driven opportunity
+allocation.
+----------------Page (2) Break----------------
+
+
+--- End of Project_Requirement_Mapping_Module.pdf ---
+
+
+
+--- Start of Weighted_Competency_Scoring_Engine_Document.pdf ---
+
+Weighted Competency Scoring Engine
+1. Overview
+The Weighted Competency Scoring Engine (WCSE) is the core module of the Explainable
+Skill-Based Internship and Project Matching Platform. It ranks candidates using transparent
+mathematical scoring instead of keyword-based resume filtering.
+2. Core Formula
+Base Formula: Match Score = Σ (Skill Weight × Candidate Proficiency Score) Extended Formula:
+Final Match Score = [ Σ (W_s × P_s) × D_a × E_m ] + C_b + P_v + S_c + A_f
+3. Key Components
+W_s = Skill Weight P_s = Candidate Proficiency D_a = Domain Alignment Factor E_m =
+Experience Multiplier C_b = Certification Bonus P_v = Portfolio Validation Score S_c = Soft Skill
+Compatibility A_f = Availability Factor
+4. Skill Normalization
+Normalized Skill Score = Candidate Score / Maximum Score Ensures fairness, prevents inflated
+ratings, and enables cross-domain comparability.
+5. Domain Alignment Factor
+Exact Match: 1.2 Related Domain: 1.0 Cross Domain: 0.8
+6. Experience Multiplier
+E_m = 1 + (Years of Relevant Experience × 0.05) Maximum Cap: 1.3
+7. Certification Bonus
+----------------Page (0) Break----------------
+Platform Verified: +5 Industry Recognized: +8 Advanced Professional: +12
+8. Portfolio Validation Score
+Evaluates code quality, documentation, deployment, real-world impact. Score Range: 0–15
+9. Soft Skill Compatibility
+Assessed via communication, teamwork, leadership, adaptability. Score Range: 0–10
+10. Availability Alignment
+Full Match: +10 Partial Match: +5 Low Match: +0
+11. Explainability Features
+• Skill-wise contribution breakdown • Ranking justification • Improvement recommendations •
+What-if simulation capability
+12. Fairness & Bias Mitigation
+• Removes gender, college, location bias • Applies normalization and weight caps • Includes
+fairness auditing and monitoring
+13. Benefits
+• Transparent ranking • Merit-based evaluation • Bias reduction • Scalable architecture •
+Encourages skill development
+----------------Page (1) Break----------------
+
+
+--- End of Weighted_Competency_Scoring_Engine_Document.pdf ---
+
