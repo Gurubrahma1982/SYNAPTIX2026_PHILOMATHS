@@ -1,0 +1,20 @@
+▲ Next.js 16.1.6 (Turbopack)
+
+⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+  Creating an optimized production build ...
+✓ Compiled successfully in 5.7s
+  Running TypeScript ...
+  Collecting page data using 15 workers ...
+  Generating static pages using 15 workers (0/14) ...
+Error occurred prerendering page "/admin". Read more: https://nextjs.org/docs/messages/prerender-error
+Error: @supabase/ssr: Your project's URL and API key are required to create a Supabase client!
+
+Check your Supabase project's API settings to find these values
+
+https://supabase.com/dashboard/project/_/settings/api
+    at <unknown> (https://supabase.com/dashboard/project/_/settings/api)
+    at z (C:\Users\gurub\OneDrive\Desktop\antigravity project\equitalent\.next\server\chunks\ssr\[root-of-the-server]__f684a0a8._.js:9:7415) {
+  digest: '1282647313'
+}
+Export encountered an error on /(dashboard)/admin/page: /admin, exiting the build.
+⨯ Next.js build worker exited with code: 1 and signal: null
